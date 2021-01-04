@@ -7,39 +7,35 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
-import SiteFooter from '@/components/SiteFooter'
+import Navbar from "@/components/Navbar";
+import SiteFooter from "@/components/SiteFooter";
 //import AddOpeningBoard from '@/components/AddOpeningBoard'
 //import TrainSpecificBoard from '@/components/TrainSpecificBoard'
 
 //import {chessboard} from 'vue-chessboard'
-import Chess from 'chess.js'
+import Chess from "chess.js";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Navbar,
     SiteFooter,
   },
   data() {
-    return {
-    }
+    return {};
   },
 
-  methods: {
-  },
-}
+  methods: {},
+};
 </script>
 
 <style>
-html, body {
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  display:flex;
+  display: flex;
   min-height: 100vh;
   flex-direction: column;
 }

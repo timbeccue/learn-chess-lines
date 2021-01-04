@@ -27,13 +27,13 @@ const likesCollection = db.collection('likes')
 // helper methods
 /* Use a list of document ids to get from firebase collection */
 const getFirebaseDocs = (item_ids, fb_collection, callback) => {
-    let itemRefs = item_ids.map(id => {
-        return fb_collection.doc(id).get();
-    });
-    Promise.all(itemRefs)
+  let itemRefs = item_ids.map(id => {
+    return fb_collection.doc(id).get();
+  });
+  Promise.all(itemRefs)
     .then(docs => {
-        let items = docs.map(doc => doc.data());
-        callback(items);
+      let items = docs.map(doc => doc.data());
+      callback(items);
     })
     .catch(error => console.log(error))
 }
