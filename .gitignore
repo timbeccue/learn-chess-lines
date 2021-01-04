@@ -21,3 +21,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# experimental stuff, maybe useful later but not now.
+src/fsm
+assets/openings
